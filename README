@@ -1,0 +1,14 @@
+BSDL and MPSAFE ext2fs for FreeBSD
+----------------------------------
+
+Using this :-
+1) Unload the present ext2fs driver by kldunload ext2fs.ko
+2) Copy the src files in /sys/fs/ext2fs
+3) Copy the MakeFile in /sys/modules/ext2fs
+4) Go to /sys/modules/ext2fs
+5) make clean obj depend && make && make install
+
+To Do
+directory indexing support
+reservation window
+ext4 support   
